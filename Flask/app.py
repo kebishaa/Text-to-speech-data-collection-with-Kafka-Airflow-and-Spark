@@ -14,6 +14,8 @@ from kafka import KafkaProducer
 app = Flask(__name__)
 CORS(app)
 
+try:
+    
 BROKER_URL = ["b-1.batch6w7.6qsgnf.c19.kafka.us-east-1.amazonaws.com:9092",
               "b-2.batch6w7.6qsgnf.c19.kafka.us-east-1.amazonaws.com:9092"]
 TOPIC = "null"
