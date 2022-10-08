@@ -136,4 +136,4 @@ zc.lockfile==2.0
 zipp==3.8.1
 mlflow==1.28.0
 pyspark==2.4.6
-requests==2.23.0
+
