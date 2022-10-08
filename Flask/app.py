@@ -2,16 +2,21 @@
 import sys
 from flask import request, jsonify
 from backend_utils import extract_audio
-from backend_utils import get_uuid
 from pprint import pprint
 from json import loads, dumps
 from kafka import KafkaProducer, KafkaConsumer
 from kafka.errors import NoBrokersAvailable
+import librosa
 
 TEXT_TOPIC = "text"
 TEXT_AUDIO_PAIR_TOPIC = "text.audio.pair"
 BROKER_ADDRESS = 'localhost:39092'
-
+def get_uuid():
+    return uuid4().hex
+def extract_audio(audio, sr=8000):
+    wav, sample_rate = librosa.load(audio, sr=sr)
+    return wav
+    
 def init_routes(app):
     """A factory function that takes in the server 
     object and initializes the routes.
