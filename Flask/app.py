@@ -1,7 +1,6 @@
 """Routes for parent Flask app."""
 import sys
 from flask import request, jsonify
-from backend_utils import extract_audio
 from pprint import pprint
 from json import loads, dumps
 from kafka import KafkaProducer, KafkaConsumer
@@ -16,7 +15,7 @@ def get_uuid():
 def extract_audio(audio, sr=8000):
     wav, sample_rate = librosa.load(audio, sr=sr)
     return wav
-    
+
 def init_routes(app):
     """A factory function that takes in the server 
     object and initializes the routes.
