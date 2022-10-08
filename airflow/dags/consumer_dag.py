@@ -5,6 +5,7 @@ from datetime import datetime
 import pandas as pd
 import boto3
 import json
+import logger
 from kafka import KafkaConsumer, KafkaProducer
 #from confluent_kafka.admin import AdminClient, NewTopic
 from kafka.admin import KafkaAdminClient, NewTopic

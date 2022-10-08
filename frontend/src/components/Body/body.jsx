@@ -2,12 +2,12 @@ import RecorderControls from "../recorder-controls";
 import RecordingsList from "../recordings-list/";
 import useRecorder from "../../hooks/useRecorder";
 
-<<<<<<< HEAD
-//import axios from 'axios';
-=======
-import axios from "axios";
+// <<<<<<< HEAD
+import axios from 'axios';
+// =======
+// import axios from "axios";
 import React, { useState } from "react";
->>>>>>> 3339a4c00a0c69fc4935dc5e1da57b146a2972d1
+// >>>>>>> 3339a4c00a0c69fc4935dc5e1da57b146a2972d1
 
 const Body = () => {
   const [userData, setUserData] = useState({});
@@ -80,23 +80,31 @@ const Body = () => {
   return (
     <>
       {/* Get text */}
-<<<<<<< HEAD
+{/* <<<<<<< HEAD
       <div className="body-container">
 =======
-      <div className="body-part" id="">
->>>>>>> 3339a4c00a0c69fc4935dc5e1da57b146a2972d1
+      
+>>>>>>> 3339a4c00a0c69fc4935dc5e1da57b146a2972d1 */}
+      <div className="w3-container w3-border" id="">
+        <head>
+          
+          {/* Adding W3.CSS file through external link  */}
+          <link rel="stylesheet" href=
+              "https://www.w3schools.com/w3css/4/w3.css"/>
+
+        </head>
         <section>
           <form onClick={handleClick}>
             <div className="">
-              <button className=""  type="click">START</button>
+              <button class="w3-btn w3-round-large w3-padding-large w3-darkblue"  type="click">START</button>
             </div>
           </form>
         </section>
         <section>
           <div>
-          <button className=""  onClick={handleShowRecordComponent}>INSERT A RECORDIN FILE</button>
+          <button className="w3-button w3-padding-large"  onClick={handleShowRecordComponent}>UPLOAD</button>
 
-            <button className="" onClick={handleShowSendComponent}>RECORD AUDIO</button>
+            <button className="w3-button w3-round-xxlarge w3-red 3-padding-large" onClick={handleShowSendComponent}>RECORD</button>
           </div>
           <div>
             <p className="">{userData.headline}</p>
@@ -111,7 +119,7 @@ const Body = () => {
                   <div>
                     <form onSubmit={audioSubmit}>
                       <input type="file" onChange={handleChange} />
-                      <button type="submit">SUBMIT</button>
+                      <button classname = "w3-button w3-padding-large" type="submit">SUBMIT</button>
                     </form>
                   </div>
                   <section>
