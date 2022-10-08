@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "audio-react-recorder": "^1.0.4",
+    "bootstrap": "^5.2.2",
+    "react-audio-player": "^0.17.0",
+    "react-bootstrap": "^2.5.0",
+    "react-router-dom": "^6.4.2"
+  },
+  "devDependencies": {
+    "@iconify/react": "^4.0.0"
+  }
+}
