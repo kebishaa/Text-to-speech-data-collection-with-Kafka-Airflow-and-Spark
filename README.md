@@ -49,7 +49,7 @@ After cloning the repository, change directory to the project folder and spin up
  
  * docker-compose -f docker-compose.yml up -d
 
- * Futher explanation about the tools and how to run them is given on separate readme files found in each folders.
+Futher explanation about the tools and how to run them is given on separate readme files found in each folders.
  
  
 ### ___________________________________________________________________________________________
