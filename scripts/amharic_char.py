@@ -30,6 +30,7 @@ supported = """
 ፀ ፁ ፂ ፃ ፄ ፅ ፆ ፇ
 ፈ ፉ ፊ ፋ ፌ ፍ ፎ ፏ
 ፐ ፑ ፒ ፓ ፔ ፕ ፖ
+
 """.split()
 
 char_map = {}
@@ -39,4 +40,5 @@ index = 2
 for c in supported:
     char_map[c] = index
     index += 1
+
 index_map = {v+1: k for k, v in char_map.items()}
